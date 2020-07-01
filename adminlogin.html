@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title> ADMIN LOGIN PAGE</title>
+    <link rel="stylesheet" type="text/css" href="styles/astyles.css">
+</head>
+
+<body>
+    <div class="bg-img">
+        <form action="adminauthen.php" method="POST" class="container">
+            <h1><i>ADMIN LOGIN</i></h1>
+
+            <label for="adminid"><b>ADMIN ID</b></label>
+            <input type="text" placeholder="Enter admin id" name="adminid" required autocomplete="off">
+            <label for="pass"><b>PASSWORD</b></label>
+            <input type="password" placeholder="Enter Password" name="pass" required autocomplete="off">
+
+            <button type="submit" value="login" class="btn">LOGIN</button>
+        </form>
+    </div>
+
+    <script>
+        function validation() {
+            var id = document.f1.adminid.value;
+            var ps = document.f1.pass.value;
+            if (id.length == "" && ps.length == "") {
+                alert("Admin id and Password fields are empty");
+                return false;
+            }
+            else {
+                if (id.length == "") {
+                    alert("Admin id  is empty");
+                    return false;
+                }
+                if (ps.length == "") {
+                    alert("Password field is empty");
+                    return false;
+                }
+            }
+        }  
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles/complaint.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="insertcomplaint.php" method="post">
+            <headerv class="header">
+                <h1 id="title" class="text-center"> Complaint</h1>
+                </header>
+
+                <form id="survey-form" action="insertcomplaint.php" method="POST">
+                    <div class="form-group">
+                        <p>LEVEL</p>
+                        <select id="dropdown" name="category" class="form-control" required>
+                            <option disabled selected value> Select your Category</option>
+                            <option value="UNIVERSITY">UNIVERSITY</option>
+                            <option value="COLLEGE">COLLEGE</option>
+                            <option value="DEPARTMENT">DEPARTMENT</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>TITLE</p>
+                        <input type="text" name="title" style="width:600px;height:40px" placeholder="title of complaint"></input>
+                    </div>
+                    <div class="form-group">
+                        <p>Type Of Complaint</p>
+                        <select id="dropdown" name="type" class="form-control" required>
+                            <option disabled selected value> Select your type of Complaint</option>
+                            <option value="TUTION FEES">TUTION FEES</option>
+                            <option value="HOSTEL">HOSTEL</option>
+                            <option value="SEM FEE">SEM FEE</option>
+                            <option value="RECOUNTING">RECOUNTING</option>
+                            <option value="REVALUATION">REVALUATION</option>
+                            <option value="TRANSPORT">TRANSPORT</option>
+                            <option value="CANTEEN">CANTEEN</option>
+                            <option value="OTHERS">OTHERS</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Description</p>
+                        <textarea id="comments" class="input-textarea" name="Describe"
+                            placeholder="Enter your comment here..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+    </div>
+    </headerv>
+    </form>
+</body>
+
+</html>

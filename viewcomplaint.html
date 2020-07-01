@@ -1,0 +1,31 @@
+<html>
+    <head><title>view complaints</title>
+        <link rel="stylesheet" type="text/css" href="styles/mystyles.css">
+    </head>
+    <body>
+        <h2>STUDENT GRIEVANCE SUPPORT SYSTEM</h4>
+            <div class="topnav">
+        
+                <a href="adminhome.html" target="_parent">HOME</a>
+                <a href="adminprofile.php" target="_parent">PROFILE</a>
+                <a href="viewcomplaint.html" target="_parent">COMPLAINTS</a>
+                <a href="resolved.php" target="_parent">SOLVED COMPLAINTS</a>
+                <a href="logout.php" target="_parent">LOGOUT</a>
+            </div>
+   <div style="margin-top:100px;margin-left:300px;width:400px;height:100px;padding:50px;background-color:purple">
+    <form action="displaycomplaints.php" method="POST">
+        <label for="category" style="color:yellow">Choose a category:</label>
+        <select name="cat" id="cat">
+            <option value="All">All</option>
+            <option value="admission">admission</option>
+            <option value="finance">finance</option>
+            <option value="examination">examination</option>
+            <option value="lecturetimetable">lecturetimetable</option>
+            <option value="revaluation">revaluation</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Find">
+    </form>
+    </div>
+    </body>
+</html>

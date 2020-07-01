@@ -1,0 +1,12 @@
+<?php
+session_start();
+unset($_SESSION['rollno']);
+unset($_SESSION['loggedin']);
+unset($_SESSION['university']);
+unset($_SESSION['college']);
+unset($_SESSION['branch']);
+unset($_SESSION['studentname']);
+session_destroy();
+header("Location:home.html");
+exit;
+?>

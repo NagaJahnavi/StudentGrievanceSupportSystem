@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" type="text/css" href="styles/regis.css">
+</head>
+
+<body style="background-image:url('50ac96d6074c898c1b27e9bf86d59329.jpg');background-repeat: repeat;">
+
+    <h1>STUDENT REGISTRATION</h1>
+    <div class="container">
+        <form action="sinsert.php" method="post" enctype="multipart/form-data">
+            <label><b>NAME OF THE STUDENT</b></label>
+            <input type="text" id="stuname" name="stuname" placeholder="enter student name">
+            <br />
+            <br />
+            <label><b>ROLL NUMBER</b></label>
+            <input type="text" id="sturoll" name="sturoll" placeholder="enter roll number">
+            <br />
+            <br />
+            <label><b>BRANCH</b></label>
+            <select id="stubranch" name="stubranch">
+                <option disabled selected value>select your branch</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="IT">IT</option>
+                <option value="EEE">EEE</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="MECH">MECH</option>
+            </select><br>
+            <br>
+
+            <label><b>YEAR</b></label><br />
+            <br>
+            <input type="radio" id="first" name="year" value="first">
+            <label for="first">I</label><br>
+            <input type="radio" id="sec" name="year" value="sec">
+            <label for="sec">II</label><br>
+            <input type="radio" id="third" name="year" value="third">
+            <label for="third">III</label><br>
+            <input type="radio" id="four" name="year" value="four">
+            <label for="four">IV</label><br>
+            <br>
+            <label><b>COLLEGE</b></label>
+            <select id="clg" name="clg">
+                <option disabled selected value>select your college</option>
+                <option value="CVR">CVR</option>
+                <option value="CBIT">CBIT</option>
+                <option value="MGIT">MGIT</option>
+                <option value="MVSR">MVSR</option>
+            </select><br>
+            <br>
+            <label><b>UNIVERSITY</b></label>
+
+            <select id="unv" name="unv">
+                <option disabled selected value>select your university</option>
+                <option value="JNTU">JNTU</option>
+                <option value="OU">OU</option>
+            </select><br>
+            <br>
+            <label><b>EMAIL</b></label>
+            <input type="text" id="email" name="email" placeholder="enter your email">
+            <br>
+            <br>
+            <label><b>PASSWORD</b></label>
+            <input type="password" id="pass" name="pass" placeholder="enter a new password">
+            <br>
+            <br>
+            <label><b>CONFIRM PASSWORD</b></label>
+            <input type="password" id="repass" name="repass" placeholder="confirm password">
+            <br>
+            <br>
+            <div class="pic"><label><b>Upload your profile pic:</b> </label>
+                <input type="file" name="uploadpic" value="" />
+            </div>
+            <br />
+            <br />
+            <input type="submit" id="btn" value="REGISTER">
+            <br>
+
+        </form>
+    </div>
+</body>
+
+</html>
